@@ -11,21 +11,13 @@ class Basic extends React.Component {
     };
   }
   render() {
-    return brace(this.state.row, this.state.col);
-    // const elems = Array(this.state.row * this.state.col).fill("2");
-    // // JSX basics test to understand the {} using
-    // return (
-    //   <div>
-    //     {elems.map((y) => (
-    //       <button>{y}</button>
-    //     ))}
-    //   </div>
-    // );
+    console.log(this.props.name, this.props.nickname);
+    return brace_jsx(this.state.row, this.state.col, this.props.name);
   }
 }
 
-const brace = (row, col) => {
-  const elems = Array(row * col).fill("2");
+const brace_jsx = (row, col, str) => {
+  const elems = Array(row * col).fill(str);
   // JSX basics test to understand the {} using
   return (
     <div>
@@ -38,7 +30,8 @@ const brace = (row, col) => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Basic />
+    {/* here we define the name for Basic.props.name  */}
+    <Basic name="Stan" nickname="le Punk" />
   </React.StrictMode>,
   document.getElementById("root")
 );
