@@ -1,8 +1,11 @@
-import React from "react";
+// import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-class Basic extends React.Component {
+// by class
+class Basic extends Component {
+  // class Basic extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,7 +15,13 @@ class Basic extends React.Component {
   }
   render() {
     console.log(this.props.name, this.props.nickname);
-    return brace_jsx(this.state.row, this.state.col, this.props.name);
+    return (
+      <div className="Basic">
+        <h1>Hello World!</h1>
+        {brace_jsx(this.state.row, this.state.col, this.props.name)}
+      </div>
+      // brace_jsx(this.state.row, this.state.col, this.props.name)
+    );
   }
 }
 
@@ -28,10 +37,31 @@ const brace_jsx = (row, col, str) => {
   );
 };
 
+// by function, the function must be in Capital, because JSX must be know that's React element.
+// if I understand well.
+function Welcome(props) {
+  return <h1>Bonjour {props.name}</h1>;
+}
+const elem_welcome = <Welcome name="Félix" />;
+
+// from other function
+function Multi() {
+  return (
+    <div>
+      <Welcome name="Lysandre" />
+      <Welcome name="Lalou" />
+    </div>
+  );
+}
+
 ReactDOM.render(
   <React.StrictMode>
     {/* here we define the name for Basic.props.name  */}
+    {elem_welcome}
+    <Multi />
     <Basic name="Stan" nickname="le Punk" />
   </React.StrictMode>,
-  document.getElementById("root")
+
+  // <Multi />,
+  document.getElementById("shook-root")
 );
