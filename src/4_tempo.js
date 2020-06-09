@@ -23,7 +23,8 @@ class Tempo extends Component {
 
   // rect method
   componentDidMount() {
-    this.tempo = setInterval(() => this.draw(), 1000);
+    console.log("tempo", this.props.tempo);
+    this.tempo = setInterval(() => this.draw(), this.props.tempo);
   }
 
   // rect method
