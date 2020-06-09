@@ -10,6 +10,7 @@ import Tempo from "./4_tempo.js";
 import Toggle from "./5_event_toggle.js";
 import ActionLink from "./6_event_function.js";
 import ButtonClick from "./7_event_class.js";
+import ShowWhat from "./7_event_class.js";
 
 export const elem_welcome = <Welcome name="Félix" />;
 
@@ -18,6 +19,7 @@ ReactDOM.render(
     <ButtonClick />
     <ActionLink />
     <Toggle />
+
     {elem_welcome}
     <Multi />
     <Basic name="Stan" nickname="le Punk" />

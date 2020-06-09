@@ -8,10 +8,10 @@ class Toggle extends Component {
     };
     // Cette liaison est nécéssaire afin de permettre
     // l'utilisation de `this` dans la fonction de rappel.
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handle_click.bind(this);
   }
 
-  handleClick() {
+  handle_click() {
     this.setState((state) => ({
       toggle_is: !state.toggle_is,
     }));
