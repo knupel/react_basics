@@ -6,6 +6,7 @@ import Basic from "./0_basic.js";
 import Welcome from "./1_welcome.js";
 import Multi from "./2_multi.js";
 import Clock from "./3_clock.js";
+import Tempo from "./4_tempo.js";
 
 export const elem_welcome = <Welcome name="Félix" />;
 
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Basic name="Stan" nickname="le Punk" />
     {/* <Clock date={new Date()} /> // this one is for class without constructor*/}
     <Clock />
+    <Tempo increment={1} />
   </React.StrictMode>,
 
   // <Multi />,
