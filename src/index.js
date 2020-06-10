@@ -8,28 +8,29 @@ import Multi from "./2_multi.js";
 import Clock from "./3_clock.js";
 import Tempo from "./4_tempo.js";
 import Toggle from "./5_event_toggle.js";
-import ActionLink from "./6_event_function.js";
-import ButtonClick from "./7_event_class.js";
-import ShowWhat from "./7_event_class.js";
+import ToggleShow from "./6_event_toggle_show.js";
+import ActionLink from "./7_event_function.js";
+import ButtonClick from "./8_event_class.js";
 
 export const elem_welcome = <Welcome name="Félix" />;
 
 ReactDOM.render(
   <React.StrictMode>
-    <ButtonClick />
-    <ActionLink />
-    <Toggle />
+    <ToggleShow />
+    {/* <Toggle /> */}
+    {/* <ButtonClick />
+    <ActionLink /> */}
 
     {elem_welcome}
-    <Multi />
-    <Basic name="Stan" nickname="le Punk" />
+    {/* <Multi />
+    <Basic name="Stan" nickname="le Punk" /> */}
     {/* <Clock date={new Date()} /> // this one is for class without constructor*/}
-    <Clock />
-    <Tempo increment={1} tempo={10000} />
-    <Tempo increment={1} tempo={1000} />
+    {/* <Clock />
+    <Tempo increment={1} tempo={10000} /> */}
+    {/* <Tempo increment={1} tempo={1000} />
     <Tempo increment={1} tempo={100} />
     <Tempo increment={1} tempo={10} />
-    <Tempo increment={1} tempo={1} />
+    <Tempo increment={1} tempo={1} /> */}
   </React.StrictMode>,
 
   // <Multi />,
