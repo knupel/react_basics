@@ -1,8 +1,6 @@
-My basics learn in React, to learn the concpet and the JSX
+My basics learn in reactjs to learn the concpet and the JSX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### `yarn start`
+To run use `yarn start` in the terminal after have targeting the main folder project.
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
