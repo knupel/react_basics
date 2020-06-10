@@ -11,12 +11,14 @@ import Toggle from "./5_event_toggle.js";
 import ToggleShow from "./6_event_toggle_show.js";
 import ActionLink from "./7_event_function.js";
 import ButtonClick from "./8_event_class.js";
+import Mailbox from "./9_if_without_if.js";
 
 export const elem_welcome = <Welcome name="Félix" />;
 
 ReactDOM.render(
   <React.StrictMode>
     <ToggleShow />
+    <Mailbox unread={["truc", "machin", "bidule"]} />
     {/* <Toggle /> */}
     {/* <ButtonClick />
     <ActionLink /> */}

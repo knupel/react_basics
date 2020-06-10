@@ -19,9 +19,8 @@ class Show extends React.Component {
   render() {
     if (this.props.toggle_is) {
       return on();
-    } else {
-      return off();
     }
+    return off();
   }
 }
 
