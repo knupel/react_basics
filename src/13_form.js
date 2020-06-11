@@ -21,17 +21,33 @@ export class NameForm extends React.Component {
     this.setState({ value: this.default_message });
   }
 
+  text_area() {
+    return (
+      <label>
+        Name:
+        <textarea value={this.state.value} onChange={this.handle_change} />
+      </label>
+    );
+  }
+
+  text_input() {
+    return (
+      <label>
+        Name:
+        <input
+          type="text"
+          value={this.state.value}
+          onChange={this.handle_change}
+        />
+      </label>
+    );
+  }
+
   render() {
     return (
       <form onSubmit={this.handle_submit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handle_change}
-          />
-        </label>
+        {/* {this.text_area()} */}
+        {this.text_input()}
         <input type="submit" value="Submit" />
       </form>
     );

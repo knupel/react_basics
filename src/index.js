@@ -15,14 +15,16 @@ import { Mailbox } from './9_if_without_if';
 import { Page } from './10_if_false_return_null';
 import { list_items, List } from './11_list';
 import { ListKey, ListKeyIDrandom } from './12_list_key';
-import { NameForm } from './13_input';
+import { NameForm } from './13_form';
+import { DropdownDrink } from './14_form_dropdown';
 
 const elem_welcome = <Welcome name="Félix" />;
 const elem_numbers = [0, 1, -2, 4, -1];
 
 ReactDOM.render(
   <React.StrictMode>
-    <NameForm />
+    <DropdownDrink />
+    {/* <NameForm /> */}
     {/* <ListKey numbers={elem_numbers} /> */}
     {/* <ListKeyIDrandom numbers={elem_numbers} /> */}
     {/* {list_items} */}
