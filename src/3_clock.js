@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Clock.css";
+import "./css/Clock.css";
 import ReactDOM from "react-dom";
 
 // without constructor, the result is not refresh
