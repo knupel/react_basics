@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import Basic from "./0_basic";
+import "./Clock.css";
 import ReactDOM from "react-dom";
 
 // without constructor, the result is not refresh
@@ -15,7 +15,7 @@ class Clock extends Component {
 }
 */
 
-class Clock extends Component {
+export class Clock extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,6 +42,7 @@ class Clock extends Component {
 
   render() {
     return (
+      // className is used for the import CSS
       <div className="Clock">
         <h1>Chez vous il est {this.state.date.toLocaleTimeString("fr")}</h1>
       </div>
@@ -49,4 +50,4 @@ class Clock extends Component {
   }
 }
 
-export default Clock;
+// export default Clock;

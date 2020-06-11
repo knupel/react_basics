@@ -13,7 +13,7 @@ class Clock extends Component {
 }
 */
 
-class Tempo extends Component {
+export class Tempo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -51,4 +51,4 @@ class Tempo extends Component {
   }
 }
 
-export default Tempo;
+// export default Tempo;

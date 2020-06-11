@@ -1,9 +1,9 @@
 import React from "react";
-import Welcome from "./1_welcome.js";
+import { Welcome } from "./1_welcome";
 // export default const elem_welcome = <Welcome name="Félix" />;
 
 // from other function
-export default function Multi() {
+export function Multi() {
   return (
     <div>
       <Welcome name="Lysandre" />
