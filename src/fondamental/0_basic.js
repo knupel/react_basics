@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // by class
 class Basic extends Component {
@@ -7,7 +7,7 @@ class Basic extends Component {
     super(props);
     this.state = {
       row: 3,
-      col: 3,
+      col: 3
     };
   }
   render() {

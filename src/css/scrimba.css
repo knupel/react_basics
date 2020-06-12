@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+.MyInfo {
+  font-family: helvetica;
+  font-size: 56px;
+  color: red;
+}
+
+.navbar {
+  font-family: helvetica;
+
+  margin-bottom: 15px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 24px;
+  color: red;
+  background: black;
+}

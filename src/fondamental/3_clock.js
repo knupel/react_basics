@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import "./css/Clock.css";
-import ReactDOM from "react-dom";
+import React, { Component } from 'react';
+import '../css/Clock.css';
 
 // without constructor, the result is not refresh
 /**
@@ -19,7 +18,7 @@ export class Clock extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date(),
+      date: new Date()
     };
   }
 
@@ -36,7 +35,7 @@ export class Clock extends Component {
   draw() {
     // refresh this.state with react method this.setState()
     this.setState({
-      date: new Date(),
+      date: new Date()
     });
   }
 
@@ -44,7 +43,7 @@ export class Clock extends Component {
     return (
       // className is used for the import CSS
       <div className="Clock">
-        <h1>Chez vous il est {this.state.date.toLocaleTimeString("fr")}</h1>
+        <h1>Chez vous il est {this.state.date.toLocaleTimeString('fr')}</h1>
       </div>
     );
   }
