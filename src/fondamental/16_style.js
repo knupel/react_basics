@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/style.css';
-import '../css/Clock.css';
 
 const super_style = {
   color: 'white',
@@ -20,7 +19,7 @@ export default class PureStyle extends React.Component {
         {/* style via a const */}
         <h1 style={super_style}>Stan le punk!</h1>
         {/* import style the thing interessting the size font is not similar*/}
-        <h1 className="Clock"> Stan le punk!</h1>
+        <h1 className="style"> Stan le punk!</h1>
       </div>
     );
   }

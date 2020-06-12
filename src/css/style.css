@@ -1,12 +1,7 @@
-.purestyle {
+.style {
   font-family: helvetica;
-  font-size: 12px;
+  font-size: 36px;
   color: red;
-
-  /* margin-bottom: 15px;
-  text-align: center;
-  justify-content: center;
-  display: flex; */
-
-  /* background: black; */
 }
+
+
