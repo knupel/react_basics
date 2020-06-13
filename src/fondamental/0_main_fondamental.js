@@ -19,6 +19,7 @@ import { NameForm } from './13_form';
 import { DropdownDrink } from './14_form_dropdown';
 import { ForJSX } from './15_for_jsx';
 import PureStyle from './16_style';
+import { ComponentOrFunction } from './17_component_or_function';
 
 const elem_welcome = <Welcome name="Félix" />;
 const elem_numbers = [0, 1, -2, 4, -1];
@@ -26,7 +27,8 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
-      <PureStyle />
+      <ComponentOrFunction />
+      {/* <PureStyle /> */}
       {/* <ForJSX /> */}
       {/* <DropdownDrink /> */}
       {/* <NameForm /> */}
@@ -41,10 +43,10 @@ export default function MainFondamental() {
       {/* <ButtonClick /> */}
       {/* <ActionLink /> */}
       {/* {elem_welcome} */}
-      {/* <Multi />
-      <Basic name="Stan" nickname="le Punk" /> */}
+      {/* <Multi /> */}
+      {/*<Basic name="Stan" nickname="le Punk" /> */}
       {/* <Clock date={new Date()} /> // this one is for class without constructor*/}
-      <Clock />
+      {/* <Clock /> */}
       <Tempo increment={1} tempo={1} />
     </React.StrictMode>
   );

@@ -8,6 +8,18 @@ body {
   color: red;
 }
 
+.header {
+  font-family: helvetica;
+
+  margin-bottom: 0px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  color: black;
+  background: red;
+}
+
 .navbar {
   font-family: helvetica;
 

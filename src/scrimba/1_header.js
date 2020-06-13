@@ -3,9 +3,9 @@ import React from 'react';
 export function Header() {
   return (
     <div>
-      <header>
-        <h1>JE suis le header</h1>
-      </header>
+      <nav className="header">
+        <h1>Stan le Punk</h1>
+      </nav>
     </div>
   );
 }
