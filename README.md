@@ -1,4 +1,9 @@
-My basics learn in reactjs to learn the concpet and the JSX
+My basics learn in reactjs to learn React concept and JSX.
+The studies from
+[srimba](https://scrimba.com/course/glearnreact)
+[react getStarted](https://reactjs.org/docs/hello-world.html)
+
+and to held little [cheatsheet](https://devhints.io/react)
 
 To run use `yarn start` in the terminal after have targeting the main folder project.
 
