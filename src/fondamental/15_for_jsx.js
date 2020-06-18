@@ -1,18 +1,94 @@
 import React from 'react';
 
-export function ForJSX() {
+// THE BAD
+// unfortunatly there is no for loop in JSX / REACT
+// instead we use map to create component and read it after make it.
+function bad() {
   const id = ['400', '500', '324', '42'];
-  const name_fr = ['vin rouge', 'vin blanc', 'champagne', 'whisky'];
+  const name = ['vin rouge', 'vin blanc', 'champagne', 'whisky'];
 
   let line = '';
   for (let i = 0; i < id.length; i++) {
     line += '<option>';
     line += id[i];
-    line += name_fr[i];
+    line += name[i];
     line += '</option>';
   }
 
-  // render() {
-  return <div>truc</div>;
-  // }
+  return <div>{line}</div>;
+}
+
+// THE GOOD and the UGGLY
+let data = [
+  {
+    id: '400',
+    name: 'vin rouge',
+    degree: 13
+  },
+  {
+    id: '500',
+    name: 'vin blanc',
+    degree: 13
+  },
+  {
+    id: '324',
+    name: 'champagne',
+    degree: 13
+  },
+  {
+    id: '42',
+    name: 'whisky',
+    degree: 45
+  },
+  {
+    id: '1664',
+    name: 'bière',
+    degree: 4.5
+  }
+];
+
+// THE UGGLY
+function ItemUggly(props) {
+  return (
+    <div>
+      <h2>{props.name}</h2>
+      <p>{props.degree}</p>
+    </div>
+  );
+}
+
+function the_uggly() {
+  const list = data.map((elem) => (
+    <ItemUggly key={elem.id} name={elem.name} degree={elem.degree} />
+  ));
+  return list;
+}
+
+// THE GOOD
+function ItemGood(props) {
+  return (
+    <div>
+      <h2>{props.info.name}</h2>
+      <p>{props.info.degree}</p>
+    </div>
+  );
+}
+
+function the_good() {
+  const list = data.map((elem) => (
+    <ItemGood
+      key={elem.id}
+      info={{
+        name: elem.name,
+        degree: elem.degree
+      }}
+    />
+  ));
+  return list;
+}
+
+export function ForJSX() {
+  // return the_good();
+  // return the_uggly();
+  return bad();
 }

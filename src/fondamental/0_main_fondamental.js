@@ -27,9 +27,9 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
-      <ComponentOrFunction />
+      {/* <ComponentOrFunction /> */}
       {/* <PureStyle /> */}
-      {/* <ForJSX /> */}
+      <ForJSX />
       {/* <DropdownDrink /> */}
       {/* <NameForm /> */}
       {/* <ListKey numbers={elem_numbers} /> */}
