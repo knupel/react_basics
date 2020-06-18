@@ -1,9 +1,17 @@
 import React from 'react';
 
+// The Good, the Bad and the Uggly,
+// look in function the difference between them.
+export function ForJSX() {
+  return the_good();
+  // return the_uggly();
+  // return the_bad();
+}
+
 // THE BAD
 // unfortunatly there is no for loop in JSX / REACT
 // instead we use map to create component and read it after make it.
-function bad() {
+function the_bad() {
   const id = ['400', '500', '324', '42'];
   const name = ['vin rouge', 'vin blanc', 'champagne', 'whisky'];
 
@@ -85,10 +93,4 @@ function the_good() {
     />
   ));
   return list;
-}
-
-export function ForJSX() {
-  // return the_good();
-  // return the_uggly();
-  return bad();
 }

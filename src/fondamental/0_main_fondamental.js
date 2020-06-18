@@ -20,6 +20,7 @@ import { DropdownDrink } from './14_form_dropdown';
 import { ForJSX } from './15_for_jsx';
 import PureStyle from './16_style';
 import { ComponentOrFunction } from './17_component_or_function';
+import { State } from './18_state.js';
 
 const elem_welcome = <Welcome name="Félix" />;
 const elem_numbers = [0, 1, -2, 4, -1];
@@ -27,9 +28,10 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
+      <State />
       {/* <ComponentOrFunction /> */}
       {/* <PureStyle /> */}
-      <ForJSX />
+      {/* <ForJSX /> */}
       {/* <DropdownDrink /> */}
       {/* <NameForm /> */}
       {/* <ListKey numbers={elem_numbers} /> */}
