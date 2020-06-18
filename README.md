@@ -1,7 +1,7 @@
 My basics learn in reactjs to learn React concept and JSX.
 The studies from
 
-[srimba](https://scrimba.com/course/glearnreact) web course
+[scrimba](https://scrimba.com/course/glearnreact) web course
 
 react web site [getStarted](https://reactjs.org/docs/hello-world.html)
 
