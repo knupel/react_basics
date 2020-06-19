@@ -23,6 +23,7 @@ import { ComponentOrFunction } from './17_component_or_function';
 import { State } from './18_state.js';
 import { LifeCycle } from './19_life_cycle.js';
 import { ConditionalRender } from './20_life_cycle_conditional_render';
+import { Fetch } from './21_Fetch.js';
 
 const elem_welcome = <Welcome name="Félix" />;
 const elem_numbers = [0, 1, -2, 4, -1];
@@ -30,9 +31,10 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
+      <Fetch />
       {/* <ConditionalRender /> */}
       {/* <LifeCycle /> */}
-      <State step={10} />
+      {/* <State step={10} /> */}
       {/* <ComponentOrFunction /> */}
       {/* <PureStyle /> */}
       {/* <ForJSX /> */}
