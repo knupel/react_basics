@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckBoxV0, CheckBoxV1, CheckBoxV2 } from './3_1_checkbox';
+import { CheckBoxV0, CheckBoxV1, CheckBoxV2, CheckBoxV3 } from './3_1_checkbox';
 import { GaleryV0, GaleryV1 } from './3_2_galery';
 
 export default function MainContent() {
@@ -10,7 +10,8 @@ export default function MainContent() {
 
       {/* <CheckBoxV0 /> */}
       {/* <CheckBoxV1 /> */}
-      <CheckBoxV2 />
+      {/* <CheckBoxV2 /> */}
+      <CheckBoxV3 />
     </React.StrictMode>
   );
 }

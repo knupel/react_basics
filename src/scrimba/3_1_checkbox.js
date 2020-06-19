@@ -1,20 +1,90 @@
 import React from 'react';
-
-/**
- * CheckBoxV2
- */
 import data from './9_0_data.js';
 
+/**
+ * CheckBoxV3
+ */
+export class CheckBoxV3 extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      item_list: data
+    };
+    this.update = this.update.bind(this);
+  }
+
+  update(id) {
+    console.log('update V3');
+    this.setState((prevState) => {
+      const update = prevState.item_list.map((elem) => {
+        if (elem.id === id) {
+          return {
+            ...elem,
+            is: !elem.is
+          };
+        }
+        return elem;
+      });
+      return {
+        item_list: update
+      };
+    });
+  }
+
+  render() {
+    console.log('renver V3');
+    const temp = this.state.item_list.map((item) => (
+      <ItemV3 key={item.id} item={item} update={this.update} />
+    ));
+
+    // return <div className="list">{temp}</div>;
+    return <div>{temp}</div>;
+  }
+}
+
+function ItemV3(props) {
+  const selected_style = {
+    fontStyle: 'italic',
+    color: 'red',
+    textDecoration: 'line-through'
+  };
+  return (
+    <div className="item">
+      <input
+        type="checkbox"
+        checked={props.item.is}
+        onChange={() => props.update(props.item.id)}
+      />
+      <p style={props.item.is ? selected_style : null}>{props.item.text}</p>
+    </div>
+  );
+}
+/**
+ * CheckBoxV2
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 export class CheckBoxV2 extends React.Component {
   constructor() {
     super();
     this.state = {
       item_list: data
     };
-    this.handle_change = this.handle_change.bind(this);
+    this.update = this.update.bind(this);
   }
 
-  handle_change(id) {
+  update(id) {
     this.setState((prevState) => {
       const update = prevState.item_list.map((elem) => {
         if (elem.id === id) {
@@ -33,20 +103,20 @@ export class CheckBoxV2 extends React.Component {
 
   render() {
     const temp = this.state.item_list.map((item) => (
-      <Item key={item.id} item={item} handle_change={this.handle_change} />
+      <ItemV2 key={item.id} item={item} update={this.update} />
     ));
 
-    return <div className="todo-list">{temp}</div>;
+    return <div className="list">{temp}</div>;
   }
 }
 
-function Item(props) {
+function ItemV2(props) {
   return (
-    <div className="todo-item">
+    <div className="item">
       <input
         type="checkbox"
         checked={props.item.is}
-        onChange={() => props.handle_change(props.item.id)}
+        onChange={() => props.update(props.item.id)}
       />
       <p>{props.item.text}</p>
     </div>

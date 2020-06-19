@@ -30,9 +30,9 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
-      <ConditionalRender />
+      {/* <ConditionalRender /> */}
       {/* <LifeCycle /> */}
-      {/* <State /> */}
+      <State step={10} />
       {/* <ComponentOrFunction /> */}
       {/* <PureStyle /> */}
       {/* <ForJSX /> */}
