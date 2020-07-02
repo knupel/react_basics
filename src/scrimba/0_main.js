@@ -4,6 +4,7 @@ import { NavBar } from './2_nav';
 import Content from './3_0_content';
 import { Footer } from './4_footer';
 import { Site0 } from './10_site_0';
+import { Site1 } from './10_site_1';
 import '../css/scrimba.css';
 
 export default function Main() {
@@ -13,7 +14,8 @@ export default function Main() {
       <NavBar />
       <Content />
       <Footer /> */}
-      <Site0 />
+      {/* <Site0 /> */}
+      <Site1 />
     </React.StrictMode>
   );
 }

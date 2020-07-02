@@ -144,7 +144,7 @@ export class Site0 extends React.Component {
         <p>Your age: {this.state.age}</p>
         <p>Your gender: {this.state.gender}</p>
         <p>Your destination: {this.state.destination}</p>
-        {/* is_vegan: false, is_kosher: false, is_gluten_free: false */}
+
         <p>misc information</p>
         {this.state.is_vegan ? <p>Vegan</p> : ''}
         {this.state.is_kosher ? <p>Kosher</p> : ''}
