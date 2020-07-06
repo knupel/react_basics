@@ -55,6 +55,29 @@ let data = [
   }
 ];
 
+// THE GOOD
+function the_good() {
+  const list = data.map((elem) => (
+    <ItemGood
+      key={elem.id}
+      info={{
+        name: elem.name,
+        degree: elem.degree
+      }}
+    />
+  ));
+  return list;
+}
+
+function ItemGood(props) {
+  return (
+    <div>
+      <h2>{props.info.name}</h2>
+      <p>{props.info.degree}</p>
+    </div>
+  );
+}
+
 // THE UGGLY
 function ItemUggly(props) {
   return (
@@ -68,29 +91,6 @@ function ItemUggly(props) {
 function the_uggly() {
   const list = data.map((elem) => (
     <ItemUggly key={elem.id} name={elem.name} degree={elem.degree} />
-  ));
-  return list;
-}
-
-// THE GOOD
-function ItemGood(props) {
-  return (
-    <div>
-      <h2>{props.info.name}</h2>
-      <p>{props.info.degree}</p>
-    </div>
-  );
-}
-
-function the_good() {
-  const list = data.map((elem) => (
-    <ItemGood
-      key={elem.id}
-      info={{
-        name: elem.name,
-        degree: elem.degree
-      }}
-    />
   ));
   return list;
 }

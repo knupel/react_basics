@@ -24,7 +24,8 @@ import { ComponentOrFunction } from './17_component_or_function';
 import { State } from './18_state.js';
 import { LifeCycle } from './19_life_cycle.js';
 import { ConditionalRender } from './20_life_cycle_conditional_render';
-import { Fetch } from './21_Fetch.js';
+import { Fetch } from './21_Fetch';
+import { GridSetting } from './22_Grid';
 
 const elem_welcome = <Welcome name="Félix" />;
 const elem_numbers = [0, 1, -2, 4, -1];
@@ -32,6 +33,7 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
+      <GridSetting />
       {/* <Fetch /> */}
       {/* <ConditionalRender /> */}
       {/* <LifeCycle /> */}
@@ -42,7 +44,7 @@ export default function MainFondamental() {
       {/* <DropdownDrink /> */}
       {/* <NameForm /> */}
       {/* <MultiForm /> */}
-      <FormAdvanced />
+      {/* <FormAdvanced /> */}
       {/* <ListKey numbers={elem_numbers} /> */}
       {/* <ListKeyIDrandom numbers={elem_numbers} /> */}
       {/* {list_items} */}
