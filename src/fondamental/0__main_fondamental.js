@@ -26,6 +26,9 @@ import { LifeCycle } from './19_life_cycle.js';
 import { ConditionalRender } from './20_life_cycle_conditional_render';
 import { Fetch } from './21_Fetch';
 import { GridSetting } from './22_Grid';
+import { HookState, HookStateAndEffect } from './hook/hook_base';
+import { PropsBase } from './props/props_base';
+import { PropsChildren } from './props/props_children';
 
 const elem_welcome = <Welcome name="Félix" />;
 const elem_numbers = [0, 1, -2, 4, -1];
@@ -33,7 +36,15 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
-      <GridSetting />
+      {/* <HookState /> */}
+      {/* <HookStateAndEffect /> */}
+
+      {/* <PropsBase name="Knupel" age={46} /> */}
+      <PropsChildren name="Knupel" age={46}>
+        {document}
+      </PropsChildren>
+
+      {/* <GridSetting /> */}
       {/* <Fetch /> */}
       {/* <ConditionalRender /> */}
       {/* <LifeCycle /> */}

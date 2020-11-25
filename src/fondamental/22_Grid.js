@@ -80,7 +80,10 @@ class Grid extends React.Component {
     return (
       <div>
         <p>
-          {this.props.name} width: {this.props.width} height:{' '}
+          {this.props.name}
+          {' width: '}
+          {this.props.width}
+          {' height: '}
           {this.props.height}
         </p>
         <Board
