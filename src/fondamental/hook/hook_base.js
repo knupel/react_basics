@@ -1,12 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 export function HookState() {
   const [count, setCount] = useState(0);
-  document.title = `Vous avez cliqué ${count} fois`;
+  document.title = `Click number ${count}`;
   return (
     <div>
-      <p>Vous avez cliqué {count} fois</p>
+      <p>Click number {count}</p>
       <button onClick={() => setCount(count + 1)}>click with useState()</button>
+    </div>
+  );
+}
+
+// https://www.digitalocean.com/community/tutorials/how-to-manage-state-with-hooks-on-react-components
+export function HookStateList() {
+  let name = `truc`;
+  const [list, setList] = useState([]);
+  function add() {
+    setList((current) => [...current, name]);
+  }
+
+  function del() {
+    const temp = [...list];
+    temp.splice(temp.indexOf(list.length), 1);
+    setList(temp);
+  }
+
+  return (
+    <div>
+      <p>Click number {list.length}</p>
+      <button onClick={add}>add {name} to list</button>
+      <button onClick={del}>delete {name} from list</button>
     </div>
   );
 }
@@ -14,13 +37,12 @@ export function HookState() {
 export function HookStateAndEffect() {
   const [count, setCount] = useState(0);
   useEffect(() => {
-    // Met à jour le titre du document via l’API du navigateur
-    document.title = `Vous avez cliqué ${count} fois`;
+    document.title = `Click number ${count}`;
   });
 
   return (
     <div>
-      <p>Vous avez cliqué {count} fois</p>
+      <p>Click number{count}</p>
       <button onClick={() => setCount(count + 1)}>
         click with useState() and UseEffect()
       </button>
