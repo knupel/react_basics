@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // https://www.digitalocean.com/community/tutorials/how-to-manage-state-with-hooks-on-react-components
-export function HookStateList() {
+export function HookStateList_1() {
   let name = `truc`;
   const [list, setList] = useState([]);
   function add() {

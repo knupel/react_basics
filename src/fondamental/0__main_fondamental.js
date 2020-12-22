@@ -28,7 +28,8 @@ import { Fetch } from './21_Fetch';
 import { GridSetting } from './22_Grid';
 
 import { HookState, HookStateAndEffect } from './hook/hook_base';
-import { HookStateList } from './hook/hook_array_list';
+import { HookStateList_1 } from './hook/hook_array_list_1';
+import { HookStateList_2 } from './hook/hook_array_list_2';
 
 import { PropsBase } from './props/props_base';
 import { PropsChildren } from './props/props_children';
@@ -39,7 +40,8 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
-      <HookStateList />
+      <HookStateList_2 />
+      {/* <HookStateList_1 /> */}
       {/* <HookState /> */}
       {/* <HookStateAndEffect /> */}
 
