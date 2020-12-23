@@ -27,6 +27,7 @@ import { ConditionalRender } from './20_life_cycle_conditional_render';
 import { Fetch } from './21_Fetch';
 import { GridSetting } from './22_Grid';
 
+import { Mother } from './hook/hook_context';
 import { HookState, HookStateAndEffect } from './hook/hook_base';
 import { HookStateList_1 } from './hook/hook_array_list_1';
 import { HookStateList_2 } from './hook/hook_array_list_2';
@@ -40,7 +41,8 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
-      <HookStateList_2 />
+      <Mother />
+      {/* <HookStateList_2 /> */}
       {/* <HookStateList_1 /> */}
       {/* <HookState /> */}
       {/* <HookStateAndEffect /> */}
