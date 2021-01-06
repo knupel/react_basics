@@ -6,7 +6,7 @@ import Fondamental from './fondamental/0__main_fondamental';
 ReactDOM.render(
   <React.StrictMode>
     {/* <Scrimba /> */}
-    <Fondamental />
+    {/* <Fondamental /> */}
   </React.StrictMode>,
   document.getElementById('shook-root')
 );
