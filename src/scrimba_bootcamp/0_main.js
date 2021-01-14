@@ -10,12 +10,20 @@ import Hoc1 from './6_1_higher_order_component';
 import Hoc2 from './6_2_higher_order_component';
 import Props0 from './7_0_props_func';
 import Props1 from './7_1_props_func';
+import Props2 from './7_2_props_func';
+import Props3 from './7_3_props_func_datafetching';
+import Update0 from './8_0_update_comp';
+import Update1 from './8_1_update_comp';
 import '../css/scrimba.css';
 
 export default function Main() {
   return (
     <React.StrictMode>
-      <Props1 />
+      <Update1 />
+      {/* <Update0 /> */}
+      {/* <Props3 /> */}
+      {/* <Props2 /> */}
+      {/* <Props1 /> */}
       {/* <Props0 /> */}
       {/* <Hoc2 /> */}
       {/* <Hoc1 /> */}

@@ -98,7 +98,7 @@ function CompC(props) {
 }
 
 // LAST PART
-function HocAdv() {
+function Props1() {
   return (
     <div>
       <CompA title="Menu" setting={{ on: true, size: 12 }}>
@@ -120,4 +120,4 @@ function HocAdv() {
   );
 }
 
-export default HocAdv;
+export default Props1;
