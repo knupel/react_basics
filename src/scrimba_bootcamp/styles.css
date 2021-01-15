@@ -8,3 +8,23 @@ main > h1 {
   padding: 20px;
   background-color: #c0fffe;
 }
+
+header {
+  padding: 20px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  margin: 10px;
+}
+
+.dark-theme {
+  background-color: #333333;
+  color: whitesmoke;
+}
+
+.light-theme {
+  background-color: whitesmoke;
+  color: #333333;
+}

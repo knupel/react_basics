@@ -14,12 +14,20 @@ import Props2 from './7_2_props_func';
 import Props3 from './7_3_props_func_datafetching';
 import Update0 from './8_0_update_comp';
 import Update1 from './8_1_update_comp';
+import Update2 from './8_2_update_comp';
+import Context0 from './9_0_context';
+import Context1 from './9_1_context';
+import Context2 from './9_1_context';
 import '../css/scrimba.css';
 
 export default function Main() {
   return (
     <React.StrictMode>
-      <Update1 />
+      <Context2 />
+      {/* <Context1 /> */}
+      {/* <Context0 /> */}
+      {/* <Update2 /> */}
+      {/* <Update1 /> */}
       {/* <Update0 /> */}
       {/* <Props3 /> */}
       {/* <Props2 /> */}
