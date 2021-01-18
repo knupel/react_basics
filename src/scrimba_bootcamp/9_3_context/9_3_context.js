@@ -33,7 +33,7 @@ class Context3 extends React.Component {
       <div>
         <ThemeContextProvider value="dark">
           <Header />
-          <Button></Button>
+          <Button />
         </ThemeContextProvider>
       </div>
     );

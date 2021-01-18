@@ -19,12 +19,14 @@ import Context0 from './9_0_context/9_0_context';
 import Context1 from './9_1_context/9_1_context';
 import Context2 from './9_2_context/9_2_context';
 import Context3 from './9_3_context/9_3_context';
+import Context4 from './9_4_context/9_4_context';
 import '../css/scrimba.css';
 
 export default function Main() {
   return (
     <React.StrictMode>
-      <Context3 />
+      <Context4 />
+      {/* <Context3 /> */}
       {/* <Context2 /> */}
       {/* <Context1 /> */}
       {/* <Context0 /> */}
