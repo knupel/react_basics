@@ -19,8 +19,9 @@ class Module extends React.Component {
   };
 
   handle_change = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
+    // const { name, value } = event.target;
+    // this.setState({ [name]: value });
+    this.setState({ new_user_name: event.target.value });
   };
 
   render() {
@@ -31,6 +32,7 @@ class Module extends React.Component {
             <p className="main">Nothing happen, {user_name} is borring</p>
             <input
               type="text"
+              // the name needd to match with the name write in the state
               name="new_user_name"
               placeholder="New username"
               value={this.state.new_user_name}
