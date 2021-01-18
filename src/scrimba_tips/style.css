@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+
+.first-dash {
+  width: 111px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #c7b9fd;
+  margin: 5px 5px 5px 96px;
+}
+
+.second-dash {
+  width: 70px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ddeae1;
+  margin: 5px 5px 5px 96px;
+}
+
+.third-dash {
+  width: 111px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #fdddb3;
+  margin: 0px 5px;
+}
+
+.dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #fdddb3;
+  margin: 0px 5px;
+}

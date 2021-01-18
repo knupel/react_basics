@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  ThemeContextProvider,
-  ThemeContextConsumer
-} from './9_0_0_themeContext';
+import { ThemeContextProvider, ThemeContextConsumer } from './themeContext';
 
 function Header(props) {
   return (
@@ -24,7 +21,7 @@ function Button(props) {
   );
 }
 
-class Context2 extends Component {
+class Context2 extends React.Component {
   render() {
     return (
       <div>
