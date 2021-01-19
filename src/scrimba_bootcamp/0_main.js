@@ -20,11 +20,19 @@ import Context1 from './9_context/9_1_context/9_1_context';
 import Context2 from './9_context/9_2_context/9_2_context';
 import Context3 from './9_context/9_3_context/9_3_context';
 import Context4 from './9_context/9_4_context/9_4_context';
+import Hook0 from './10_hook/10_0_hook';
+import Hook1 from './10_hook/10_1_hook_form';
+import Hook2 from './10_hook/10_2_hook_useEffect';
+import Hook3 from './10_hook/10_3_hook_useEffect';
 import '../css/scrimba.css';
 
 export default function Main() {
   return (
     <React.StrictMode>
+      <Hook3 />
+      {/* <Hook2 /> */}
+      {/* <Hook1 /> */}
+      {/* <Hook0 /> */}
       {/* <Context4 /> */}
       {/* <Context3 /> */}
       {/* <Context2 /> */}
