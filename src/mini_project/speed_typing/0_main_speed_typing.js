@@ -1,14 +1,15 @@
-// STEP 7 optimization
-import React, { useState, useEffect } from 'react';
+// STEP 8 useRef
+import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
 
 function App() {
-  let starting_time = 30;
+  let starting_time = 10;
   // count
   const [is_count, setCount] = useState(false);
   const [is_start, setStart] = useState(false);
   const [time, setTime] = useState(starting_time);
   const [content, setContent] = useState('');
+  const textarea_ref = useRef(null);
 
   function start() {
     if (is_count && !is_start) {
@@ -43,10 +44,16 @@ function App() {
     return arr.filter((word) => word !== '').length;
   }
 
+  function manage_button(is) {
+    if (is) textarea_ref.current.focus();
+    return is;
+  }
+
   return (
     <div>
       <h1>Speed Typing</h1>
       <textarea
+        ref={textarea_ref}
         placeholder="Tape here"
         value={content}
         onChange={write_content}
@@ -54,7 +61,8 @@ function App() {
       />
       <h4>Time remaining: {time}</h4>
       <button disabled={is_start} onClick={start}>
-        {is_start ? 'STOP' : 'START'}
+        {manage_button(is_start) ? 'START' : 'STOP'}
+        {/* {is_start ? 'STOP' : 'START'} */}
       </button>
       <h1>Result: {is_count ? calc_words_count(content) : 'in progress'}</h1>
     </div>
@@ -62,6 +70,71 @@ function App() {
 }
 
 export default App;
+
+// // STEP 7 optimization
+// import React, { useState, useEffect } from 'react';
+// import './style.css';
+
+// function App() {
+//   let starting_time = 30;
+//   // count
+//   const [is_count, setCount] = useState(false);
+//   const [is_start, setStart] = useState(false);
+//   const [time, setTime] = useState(starting_time);
+//   const [content, setContent] = useState('');
+
+//   function start() {
+//     if (is_count && !is_start) {
+//       setTime(starting_time);
+//       setStart(false);
+//       setContent('');
+//       setCount(false);
+//     }
+//     setStart(!is_start ? true : false);
+//   }
+
+//   useEffect(() => {
+//     if (is_start && time > 0) {
+//       setTimeout(() => {
+//         setTime((arg) => arg - 1);
+//       }, 1000);
+//     } else if (time === 0) {
+//       setCount(true);
+//       setStart(false);
+//     }
+//   }, [is_start, time]);
+
+//   function write_content(event) {
+//     if (is_start) {
+//       const buf = event.target.value;
+//       setContent(buf);
+//     }
+//   }
+
+//   function calc_words_count(arg) {
+//     const arr = arg.trim().split(' ');
+//     return arr.filter((word) => word !== '').length;
+//   }
+
+//   return (
+//     <div>
+//       <h1>Speed Typing</h1>
+//       <textarea
+//         placeholder="Tape here"
+//         value={content}
+//         onChange={write_content}
+//         disabled={!is_start}
+//       />
+//       <h4>Time remaining: {time}</h4>
+//       <button disabled={is_start} onClick={start}>
+//         {is_start ? 'STOP' : 'START'}
+//       </button>
+//       <h1>Result: {is_count ? calc_words_count(content) : 'in progress'}</h1>
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // // STEP 6
 // import React, { useState, useEffect } from 'react';
