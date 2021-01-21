@@ -26,12 +26,14 @@ import Hook2 from './10_hook/10_2_hook_useEffect';
 import Hook3 from './10_hook/10_3_hook_useEffect';
 import Hook4 from './10_hook/10_4_hook_useRef';
 import Hook5 from './10_hook/10_5_hook_useContext';
+import Hook6 from './10_hook/10_6_hook_custom';
 import '../css/scrimba.css';
 
 export default function Main() {
   return (
     <React.StrictMode>
-      <Hook5 />
+      <Hook6 />
+      {/* <Hook5 /> */}
       {/* <Hook4 /> */}
       {/* <Hook3 /> */}
       {/* <Hook2 /> */}

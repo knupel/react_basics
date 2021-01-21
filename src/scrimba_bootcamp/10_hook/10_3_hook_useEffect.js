@@ -5,13 +5,13 @@ function Funk() {
   const [count, setCount] = useState(0);
   const [color, setColor] = useState(null);
 
-  function increment() {
-    setCount((arg) => arg + 1);
-  }
+  // function increment() {
+  //   setCount((arg) => arg + 1);
+  // }
 
-  function decrement() {
-    setCount((arg) => arg - 1);
-  }
+  // function decrement() {
+  //   setCount((arg) => arg - 1);
+  // }
 
   useEffect(() => {
     const id = setInterval(() => {

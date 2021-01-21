@@ -2,6 +2,16 @@
 import React from 'react';
 
 import '../css/index.css';
+
+import { Mother } from './hook/hook_context';
+import { StateContext } from './hook/hook_context_useState';
+import { HookState, HookStateAndEffect } from './hook/hook_base';
+import { HookStateList_1 } from './hook/hook_array_list_1';
+import { HookStateList_2 } from './hook/hook_array_list_2';
+
+import { PropsBase } from './props/props_base';
+import { PropsChildren } from './props/props_children';
+
 import Basic from './0_basic';
 import { Welcome } from './1_welcome';
 import { Multi } from './2_multi';
@@ -26,15 +36,7 @@ import { LifeCycle } from './19_life_cycle.js';
 import { ConditionalRender } from './20_life_cycle_conditional_render';
 import { Fetch } from './21_Fetch';
 import { GridSetting } from './22_Grid';
-
-import { Mother } from './hook/hook_context';
-import { StateContext } from './hook/hook_context_useState';
-import { HookState, HookStateAndEffect } from './hook/hook_base';
-import { HookStateList_1 } from './hook/hook_array_list_1';
-import { HookStateList_2 } from './hook/hook_array_list_2';
-
-import { PropsBase } from './props/props_base';
-import { PropsChildren } from './props/props_children';
+import Exp from './23_array_or_object_export';
 
 const elem_welcome = <Welcome name="Félix" />;
 const elem_numbers = [0, 1, -2, 4, -1];
@@ -42,9 +44,10 @@ const elem_numbers = [0, 1, -2, 4, -1];
 export default function MainFondamental() {
   return (
     <React.StrictMode>
+      <Exp />
       {/* <StateContext /> */}
       {/* <Mother /> */}
-      <HookStateList_2 />
+      {/* <HookStateList_2 /> */}
       {/* <HookStateList_1 /> */}
       {/* <HookState /> */}
       {/* <HookStateAndEffect /> */}
