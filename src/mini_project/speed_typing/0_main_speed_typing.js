@@ -62,7 +62,6 @@ function App() {
       <h4>Time remaining: {time}</h4>
       <button disabled={is_start} onClick={start}>
         {manage_button(is_start) ? 'START' : 'STOP'}
-        {/* {is_start ? 'STOP' : 'START'} */}
       </button>
       <h1>Result: {is_count ? calc_words_count(content) : 'in progress'}</h1>
     </div>
