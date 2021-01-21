@@ -1,16 +1,23 @@
 import React, { Component, useState } from 'react';
 
-function Funk(props) {
-  const [count, setCount] = useState(0);
+function useCount(arg) {
+  const [count, setCount] = useState(arg);
 
   // const increment = () => {
   //   setCount((arg) => arg + 1);
   // };
 
   // or simply
+
   function increment() {
     setCount((arg) => arg + 1);
   }
+  // return {count, increment}; //return object
+  return [count, increment]; // eturn array
+}
+
+function Funk(props) {
+  const [count, increment] = useCount(3);
 
   return (
     <div>

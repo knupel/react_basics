@@ -8,9 +8,9 @@ import MiniProject from './mini_project/0_main_mini_project';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <MiniProject /> */}
+    <MiniProject />
     {/* <ScrimbaTips /> */}
-    <ScrimbaBootcamp />
+    {/* <ScrimbaBootcamp /> */}
     {/* <Scrimba /> */}
     {/* <Fondamental /> */}
   </React.StrictMode>,
