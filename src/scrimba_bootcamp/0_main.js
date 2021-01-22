@@ -29,12 +29,16 @@ import Hook5 from './10_hook/10_5_hook_useContext';
 import Hook6 from './10_hook/10_6_hook_custom';
 import Hook7 from './10_hook/10_7_hook_custom_adv';
 import Router0 from './11_router/11_0_router';
+import Router1 from './11_router/11_1_router_hooks';
+import Router2 from './11_router/11_2_router_params';
 import '../css/scrimba.css';
 
 export default function Main() {
   return (
     <React.StrictMode>
-      <Router0 />
+      <Router2 />
+      {/* <Router1 /> */}
+      {/* <Router0 /> */}
       {/* <Hook7 /> */}
       {/* <Hook6 /> */}
       {/* <Hook5 /> */}
