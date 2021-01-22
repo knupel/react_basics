@@ -22,6 +22,10 @@ function Funk() {
         <Route exact path="/services">
           <ServicesList />
         </Route>
+        {/* to call n elem with different id */}
+        <Route path="/services/:service_id">
+          <ServiceDetail />
+        </Route>
       </Switch>
     </div>
   );

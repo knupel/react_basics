@@ -1,26 +1,27 @@
 export default [
   {
-    name: 'Lawn Mowing',
+    name: 'Drink Beer',
     price: 30,
     _id: '1',
-    description: 'Have a carpet-like lawn without any work.'
+    description:
+      'Each morning after your wake up, Nestor come on to serve your favorite cereal'
   },
   {
-    name: 'Leaf Raking',
+    name: 'Good Night',
     price: 50,
     _id: '2',
-    description: 'Remove those pesky dead tree parts from your property.'
+    description: 'Gérard comme to dring your brain to clean your teeth'
   },
   {
     name: 'Weeding',
     price: 50,
     _id: '3',
-    description: "Don't let the invaders ruin your yard."
+    description: 'Bob come to clean your garden from good grass'
   },
   {
-    name: 'Sprinkler repair',
+    name: 'Irma',
     price: 100,
     _id: '4',
-    description: 'Keep your irrigation system top-notch.'
+    description: 'Keep your future clear and digest'
   }
 ];

@@ -8,11 +8,9 @@ function ServicesList() {
       <h1>Services List Page</h1>
       <div>
         {servicesData.map((elem) => (
-          // <p>{elem.name}</p>
-
-          <li>
+          <h3 key={elem._id}>
             <Link to={`/services/${elem._id}/`}>{elem.name}</Link>
-          </li>
+          </h3>
         ))}
       </div>
     </div>
