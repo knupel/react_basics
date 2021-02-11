@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/Clock.css';
+import '../../css/Clock.css';
 
 // without constructor, the result is not refresh
 /**

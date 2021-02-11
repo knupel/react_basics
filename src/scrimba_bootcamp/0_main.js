@@ -32,12 +32,14 @@ import Router0 from './11_router/11_0_router';
 import Router1 from './11_router/11_1_router_hooks';
 import Router2 from './11_router/11_2_router_params_data';
 import Router3 from './11_router/11_3_router_hooks_match';
+import Router7 from './11_router/11_7_exo_1';
 import '../css/scrimba.css';
 
 export default function Main() {
   return (
     <React.StrictMode>
-      <Router3 />
+      <Router7 />
+      {/* <Router3 /> */}
       {/* <Router2 /> */}
       {/* <Router1 /> */}
       {/* <Router0 /> */}

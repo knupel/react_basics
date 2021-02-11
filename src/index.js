@@ -10,9 +10,9 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <MiniProject /> */}
     {/* <ScrimbaTips /> */}
-    <ScrimbaBootcamp />
+    {/* <ScrimbaBootcamp /> */}
     {/* <Scrimba /> */}
-    {/* <Fondamental /> */}
+    <Fondamental />
   </React.StrictMode>,
   document.getElementById('shook-root')
 );

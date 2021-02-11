@@ -1,5 +1,4 @@
 import React, { Component, useContext } from 'react';
-import ToggleShow from '../../fondamental/6_event_toggle_show';
 import { ThemeContextProvider, ThemeContext } from './themeContext';
 
 function Header(props) {

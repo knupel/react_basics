@@ -8,7 +8,7 @@ import Info from './info_2';
  * useRouteMatch return a bad path... so it's not possible to use it
  *
  *
- *
+ * https://reacttraining.com/blog/react-router-v5-1/#useroutematch
  */
 function Profile() {
   const { path, url } = useRouteMatch();
