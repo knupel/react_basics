@@ -21,12 +21,16 @@ import Reducer1 from './reducer/reducer_1';
 import Reducer2 from './reducer/reducer_2_customHook';
 import Reducer3_problem from './reducer/reducer_3_exercise_problem';
 import Reducer3_solution from './reducer/reducer_3_exercise_problem';
+import Reducer4_without from './reducer/reducer_4_without_reducer';
+import Reducer4_with from './reducer/reducer_4_with_reducer';
 
 export default function MainFondamental() {
   return (
     <React.StrictMode>
       <div>Let's Boogie say Cassidy William to starts</div>
-      <Reducer3_solution />
+      <Reducer4_with />
+      {/* <Reducer4_without /> */}
+      {/* <Reducer3_solution /> */}
       {/* <Reducer3_problem /> */}
       {/* <Reducer2 /> */}
       {/* <Reducer1 /> */}
