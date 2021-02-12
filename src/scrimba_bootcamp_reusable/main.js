@@ -19,12 +19,16 @@ import Ref6Exo from './ref/ref_6_exo_login_signup';
 import Reducer0 from './reducer/reducer_0';
 import Reducer1 from './reducer/reducer_1';
 import Reducer2 from './reducer/reducer_2_customHook';
+import Reducer3_problem from './reducer/reducer_3_exercise_problem';
+import Reducer3_solution from './reducer/reducer_3_exercise_problem';
 
 export default function MainFondamental() {
   return (
     <React.StrictMode>
       <div>Let's Boogie say Cassidy William to starts</div>
-      <Reducer2 />
+      <Reducer3_solution />
+      {/* <Reducer3_problem /> */}
+      {/* <Reducer2 /> */}
       {/* <Reducer1 /> */}
       {/* <Reducer0 /> */}
       {/* <Ref6Exo /> */}
