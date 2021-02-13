@@ -26,7 +26,7 @@ const CharacterCounterInput = ({ text, defaults }) => {
   const [error, setError] = useState(false);
   const max_length = 30;
 
-  console.log(states);
+  // console.log(states);
 
   function show_result() {
     const is = message.length > max_length ? true : false;

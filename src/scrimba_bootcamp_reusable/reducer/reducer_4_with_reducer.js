@@ -1,5 +1,9 @@
 import React, { useEffect, useReducer } from 'react';
 
+/**
+ * The code is longer, but it is very usable every where
+ * So in a long software it became smaller or more useful, helpful....
+ */
 function useAuth() {
   let [state, dispatch] = useReducer(
     (state, action) => {

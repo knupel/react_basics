@@ -24,11 +24,18 @@ import Reducer3_solution from './reducer/reducer_3_exercise_problem';
 import Reducer4_without from './reducer/reducer_4_without_reducer';
 import Reducer4_with from './reducer/reducer_4_with_reducer';
 
+import Compound0 from './compound/compound_0';
+import Compound1 from './compound/compound_1';
+import Compound2 from './compound/compound_2_CC';
+
 export default function MainFondamental() {
   return (
     <React.StrictMode>
-      <div>Let's Boogie say Cassidy William to starts</div>
-      <Reducer4_with />
+      <div>Let's Boogie say Cassidy Williams to starts</div>
+      <Compound2 />
+      {/* <Compound1 /> */}
+      {/* <Compound0 /> */}
+      {/* <Reducer4_with /> */}
       {/* <Reducer4_without /> */}
       {/* <Reducer3_solution /> */}
       {/* <Reducer3_problem /> */}

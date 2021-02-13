@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Frag } from './2_fragment';
-import { Feature } from './1_new_concept_js';
+import { Feature } from './1_new_concept';
 import { PropsDefault } from './3_props_default';
 import { PropsTypeDefault } from './4_proptypes';
 import { Child } from './5_children';

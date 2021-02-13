@@ -69,24 +69,24 @@ const App = () => {
 export default App;
 
 // example to uunderstand how reducer work
-let initialState = { count: 0, cake: true };
+// let initialState = { count: 0, cake: true };
 
-let actions = [
-  { type: 'ADD', by: 2 },
-  { type: 'MINUS', by: 4 },
-  { type: 'ADD', by: 10 },
-  { type: 'EAT', is: false }
-];
+// let actions = [
+//   { type: 'ADD', by: 2 },
+//   { type: 'MINUS', by: 4 },
+//   { type: 'ADD', by: 10 },
+//   { type: 'EAT', is: false }
+// ];
 
-function reducer(state, action) {
-  if (action.type === 'ADD') {
-    return { ...state, count: state.count + action.by };
-  } else if (action.type === 'MINUS') {
-    return { ...state, count: state.count - action.by };
-  } else if (action.type === 'EAT') {
-    return { ...state, cake: (state.cake = action.is) };
-  }
-  return state;
-}
+// function reducer(state, action) {
+//   if (action.type === 'ADD') {
+//     return { ...state, count: state.count + action.by };
+//   } else if (action.type === 'MINUS') {
+//     return { ...state, count: state.count - action.by };
+//   } else if (action.type === 'EAT') {
+//     return { ...state, cake: (state.cake = action.is) };
+//   }
+//   return state;
+// }
 
-console.log(actions.reduce(reducer, initialState));
+// console.log(actions.reduce(reducer, initialState));
