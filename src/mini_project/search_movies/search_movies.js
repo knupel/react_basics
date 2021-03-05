@@ -13,7 +13,7 @@ export default function SearchMovies() {
     // api_key=5dcf7f28a88be0edc01bbbde06f024ab&language=en-US&query=${query}&page=1&
     // include_adult=false`;
 
-    // my API key who don't work :(
+    // my API key who don't work, but I create the API and this key is ok.
     const url = `https://api.themoviedb.org/3/search/movie?
     api_key=d408c72542b4bf19f9f5d20d784f1008&language=en-US${query}&page=1&
     include_adult=false`;
@@ -45,7 +45,7 @@ export default function SearchMovies() {
         {movies === 'undefined' ? (
           movies
             .filter((movie) => movie.poster_path)
-            .map((movie) => <MovieCard movie={movie} />)
+            .map((movie) => <MovieCard movie={movie} key={movie.id} />)
         ) : (
           <div></div>
         )}
